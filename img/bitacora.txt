@@ -1,0 +1,6 @@
+http://127.0.0.1:5500/index.html
+Cannot GET /promociones.html
+
+HTML cumple el papel de estructurar la pagina como titulos y listas
+CSS le da el estilo visual a la pagina como el color y el ancho
+javaScript hace la parte logica de la aplicacion como los inicios de sesion  o procedimeintos logicos
