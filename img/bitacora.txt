@@ -4,3 +4,24 @@ Cannot GET /promociones.html
 HTML cumple el papel de estructurar la pagina como titulos y listas
 CSS le da el estilo visual a la pagina como el color y el ancho
 javaScript hace la parte logica de la aplicacion como los inicios de sesion  o procedimeintos logicos
+RuedaLibre/
+│
+├── img/
+│
+├── pages/
+│   ├── correo.html
+│   ├── reservas.html
+│   └── tarifas.html
+│
+└── index.html
+
+Archivo actual	Destino	Ruta HTML
+index.html	correo.html	pages/correo.html
+index.html	reservas.html	pages/reservas.html
+index.html	tarifas.html	pages/tarifas.html
+correo.html	index.html	../index.html
+reservas.html	index.html	../index.html
+tarifas.html	index.html	../index.html
+correo.html	reservas.html	reservas.html
+correo.html	tarifas.html	tarifas.html
+reservas.html	tarifas.html	tarifas.html
