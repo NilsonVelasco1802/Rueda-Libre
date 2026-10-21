@@ -1,0 +1,121 @@
+:root {
+    /* Colores principales */
+    --color-primary: #1B4332;
+    --color-secondary: #2D6A4F;
+    --color-accent: #52B788;
+
+    /* Colores de fondo */
+    --color-background: #FFFFFF;
+    --color-background-secondary: #F1F5F3;
+
+    /* Colores de texto */
+    --color-text: #212529;
+    --color-text-secondary: #495057;
+    --color-text-light: #FFFFFF;
+
+    /* Bordes */
+    --color-border: #ADB5BD;
+
+    /* Estados de interacción */
+    --color-primary-hover: #143326;
+    --color-focus: #2D6A4F;
+
+    /* Botones */
+    --color-button-background: #1B4332;
+    --color-button-text: #FFFFFF;
+    --color-button-hover: #143326;
+
+    /* Enlaces */
+    --color-link: #1B4332;
+    --color-link-hover: #2D6A4F;
+
+    /* Sombras */
+    --shadow-card: 0 4px 12px rgba(27, 67, 50, 0.12);
+
+    /* Bordes redondeados */
+    --border-radius: 8px;
+}
+
+/*////////  Estilos generales ////////*/
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Encabezados */
+h1,
+h2,
+h3 {
+    color: var(--color-primary);
+}
+
+/* Párrafos */
+p {
+    color: var(--color-text);
+}
+
+/* Navegación */
+nav {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+/* Botones */
+button {
+    background-color: var(--color-button-background);
+    color: var(--color-button-text);
+    border: 2px solid var(--color-button-background);
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estado hover del botón */
+button:hover {
+    background-color: var(--color-button-hover);
+    border-color: var(--color-button-hover);
+}
+
+/* Tarjetas */
+.card {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
+    padding: 20px;
+}
+
+/* Indicador de enfoque para teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+
+/* ////////////Menu Header //////////// */
+
+#menu-header{
+    color: var(--color-text-light);
+}
+
+/* ////////////Menu Header //////////// */
+
+#menu-footer{
+    color: var(--color-text-light);
+}
