@@ -1,0 +1,31 @@
+#button-tarifas a{
+    color: var(--color-text-light);
+    margin: 1rem;
+}
+
+#tablas-tarifa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tablas-tarifa section {
+    width: 90%;
+    max-width: 1100px;
+}
+
+#tablas-tarifa h1,
+#tablas-tarifa h2 {
+    text-align: center;
+}
+
+#tablas-tarifa .table-responsive {
+    width: 100%;
+}
+
+#tablas-tarifa table {
+    width: 100%;
+}

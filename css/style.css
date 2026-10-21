@@ -12,6 +12,7 @@
     --color-text: #212529;
     --color-text-secondary: #495057;
     --color-text-light: #FFFFFF;
+    --color-a-menu: FFFFFF;
 
     /* Bordes */
     --color-border: #ADB5BD;
@@ -107,15 +108,148 @@ textarea:focus-visible {
     outline-offset: 3px;
 }
 
+/* //////////// Header //////////// */
 
-/* ////////////Menu Header //////////// */
+/* HEADER */
+.header-principal {
+    width: 100%;
+    background-color: var(--color-primary);
+}
 
-#menu-header{
-    color: var(--color-text-light);
+/* Navegación principal */
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Menú */
+#menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces */
+#menu-header a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+#menu-header a:hover {
+    color: #D8F3DC;
+}
+
+/* RESPONSIVE: celulares y pantallas pequeñas */
+@media (max-width: 600px) {
+
+    .nav-principal {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    #menu-header {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    #menu-header li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-header a {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
 
 /* ////////////Menu Header //////////// */
 
-#menu-footer{
-    color: var(--color-text-light);
+#menu-header li a{
+    color: var(--color-a-menu);
+    font-weight: 600;
+}
+
+/* ////////////Menu Header //////////// */
+
+#nav-footer a{
+    color: var(--color-a-menu);
+    font-weight: 600;
+}
+
+
+/*////////////// Footer /////////////////*/
+
+/* FOOTER */
+.footer-principal {
+    width: 100%;
+    background-color: #2D6A4F;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+/* Navegación del footer */
+#nav-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Enlaces */
+#nav-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+#nav-footer a:hover {
+    color: #D8F3DC;
+}
+
+/* RESPONSIVE: celulares */
+@media (max-width: 600px) {
+    #nav-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nav-footer a {
+        width: 100%;
+        font-size: 15px;
+    }
 }
