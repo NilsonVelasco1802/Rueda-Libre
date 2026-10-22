@@ -10,6 +10,7 @@
     gap: 30px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 10rem;
 }
 
 #tablas-tarifa section {
@@ -20,7 +21,36 @@
 #tablas-tarifa h1,
 #tablas-tarifa h2 {
     text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
 }
+
+#tablas-tarifa tr,
+#tablas-tarifa th,
+#tablas-tarifa td{
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+#tablas-tarifa h2,
+#tablas-tarifa th,
+#tablas-tarifa td,
+#tablas-tarifa caption {
+    font-family: "Rubik", sans-serif ;
+    font-style: italic;
+}
+
+#logo-tarifa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-tarifa img{
+    width: 10rem;
+    height: 10rem;
+}
+
 
 #tablas-tarifa .table-responsive {
     width: 100%;
