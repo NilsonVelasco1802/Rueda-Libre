@@ -9,6 +9,7 @@
     padding: 20px;
     margin-top: 5rem;
     font-family: "Rubik", sans-serif;
+    margin-bottom: 8rem;
 }
 
 #main-correo section{
@@ -18,7 +19,8 @@
     box-sizing: border-box;
 }
 #main-correo dd{
-    border: 3px solid var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 0.4rem;
     padding: 10px;
 
 }
