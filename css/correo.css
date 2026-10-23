@@ -11,8 +11,14 @@
     font-family: "Rubik", sans-serif;
 }
 
-#main-correo section {
+#main-correo section{
+    font-family: "Rubik", sans-serif;
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
+}
+#main-correo dd{
+    border: 3px solid var(--color-primary);
+    padding: 10px;
+
 }
