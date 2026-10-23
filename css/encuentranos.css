@@ -8,7 +8,7 @@
 }
 
 #redes-encuentranos ul li a {
-    display: block;
+    display: flex;
     color: var(--color-link);
     text-decoration: none;
     font-size: 18px;

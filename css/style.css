@@ -122,6 +122,9 @@ textarea:focus-visible {
 /* //////////// Header //////////// */
 
 /* HEADER */
+
+
+/* Header principal */
 .header-principal {
     position: fixed;
     top: 0;
@@ -136,17 +139,14 @@ textarea:focus-visible {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0px 30px;
-    gap: 20px;
+    padding: 2px 15px;
+    gap: 10px;
 }
 
 /* Logo */
 .logo img {
     display: block;
-    width: 80%;
-    max-width: 150px;
+    width: 70px;
     height: auto;
 }
 
@@ -155,7 +155,7 @@ textarea:focus-visible {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 8px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -166,15 +166,18 @@ textarea:focus-visible {
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 13px;
+    padding: 5px;
     transition: color 0.3s ease;
     font-family: "Rubik", sans-serif;
 }
 
+/* Efecto hover */
 #menu-header a:hover {
     color: #D8F3DC;
 }
+
+
 
 /* RESPONSIVE: celulares y pantallas pequeñas */
 @media (max-width: 600px) {
@@ -229,11 +232,8 @@ textarea:focus-visible {
     background-color: var(--color-primary);
     padding: 25px 20px;
     margin-top: 30px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    color: white;
-    z-index: 1000;
+
+
 }
 
 /* Navegación del footer */
