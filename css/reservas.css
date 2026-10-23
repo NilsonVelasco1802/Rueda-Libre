@@ -14,3 +14,22 @@
     font-family: "Rubik", sans-serif;
 }
 
+
+#formulario {
+    max-width: 700px;
+    width: 100%;
+    border: 3px solid var(--color-primary);
+    border-radius: 0.67rem;
+    padding: 20px;
+}
+#formulario select{
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+#politicas {
+    display: inline-flex;
+    width: auto;
+}

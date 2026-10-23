@@ -28,7 +28,7 @@
 #main-principal {
     margin-right: 15rem;
     margin-left: 15rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -52,6 +52,6 @@
 }
 
 #foot-banner{
-    height: 14rem;
+    height: 17rem;
     background-color: var(--color-primary);
 }

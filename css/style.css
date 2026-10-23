@@ -275,3 +275,12 @@ textarea:focus-visible {
         font-size: 15px;
     }
 }
+
+#img-logo-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
