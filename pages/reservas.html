@@ -45,17 +45,16 @@
     <main>
 
         <section id="reserva-formulario">
-            <h1>Reserva tu bicicleta</h1>
+            <h1>Formulario de Reserva</h1>
 
-            <form action="#" method="post">
+            <form id="formulario" action="#" method="post">
 
                 <fieldset>
-                    <legend>Datos Comprador</legend>
+                    <legend> Tus Datos</legend>
 
-                    <p>Ingresa tus datos</p>
 
                     <p>
-                        <label for="nombre">Nombre Completo</label>
+                        <label for="nombre"> Tu Nombre Completo</label>
                         <br>
                         <input
                             type="text"
@@ -65,21 +64,7 @@
                             minlength="3">
                     </p>
 
-                    <p>
-                        <label for="documento">Número de documento:</label>
-                        <br>
-                        <input
-                            type="text"
-                            id="documento"
-                            name="documento"
-                            inputmode="numeric"
-                            pattern="[0-9]{6,10}"
-                            minlength="6"
-                            maxlength="10"
-                            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
-                            placeholder="Ingrese su documento"
-                            required>
-                    </p>
+                    
 
                     <p>
                         <label for="correo">Correo</label>
@@ -97,10 +82,33 @@
                             type="tel"
                             id="telefono"
                             name="telefono"
+                            maxlength="10"
                             required
-                            pattern="[0-9],{10}"
+                            pattern="[0-9],{6,10}"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                             title="Esccribe almenos 10 numeros">
                     </p>
+
+                    <p>
+                        <label for="documento">Número de documento:</label>
+                        <br>
+                        <input
+                            type="text"
+                            id="documento"
+                            name="documento"
+                            inputmode="numeric"
+                            pattern="[0-9]{6,10}"
+                            minlength="6"
+                            maxlength="10"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                            required>
+                    </p>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> Tu alquiler</legend>
 
                     <p>
                         <label for="fecha">Fecha del alquiler:</label>
@@ -113,13 +121,7 @@
                             max="2026-12-31"
                             required>
                     </p>
-
-                </fieldset>
-
-                <fieldset>
-                    <legend>Datos Bicicleta</legend>
-
-                    <h2>Escoge tu bicicleta</h2>
+                    
                     <br>
 
                     <p>
@@ -146,6 +148,16 @@
                     </p>
 
                     <p>
+                        <label for="plan">Recorrido guiado:</label>
+                        <br>
+                        <select id="plan" name="plan" required>
+                            <option value="" disabled selected>Seleccione un recorrido</option>
+                            <option value="hora">Medellín</option>
+                            <option value="dia">Norte</option>
+                            <option value="semana">Sur</option>
+                        </select>
+                    </p>
+                    <p>
                         <label for="cantidad">Cantidad de bicicletas:</label>
                         <br>
                         <input
@@ -156,6 +168,7 @@
                             max="6"
                             step="1"
                             required>
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                     </p>
 
                     <p>
@@ -169,14 +182,16 @@
                     </p>
 
                     <p>
+                        <br>
+                        
+
+                        <label for="politicas">Acepto las políticas de alquiler</label>
                         <input
                             type="checkbox"
                             id="politicas"
                             name="politicas"
                             value="aceptadas"
                             required>
-
-                        <label for="politicas">Acepto las políticas de alquiler</label>
                     </p>
 
                 </fieldset>
@@ -185,6 +200,8 @@
         </section>
 
     </main>
+    
+    <img id="img-logo-whatsapp" src="../img/WhatsApp.svg.webp" alt="portada">
 
     <footer class="footer-principal">
         <nav id="nav-footer">
