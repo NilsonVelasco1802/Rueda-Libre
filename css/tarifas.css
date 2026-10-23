@@ -3,6 +3,11 @@
     margin: 1rem;
 }
 
+#button-tarifas{
+    border: 10px solid var(--color-background);
+    border-radius: 1rem;
+}
+
 #tablas-tarifa {
     display: flex;
     flex-direction: column;
@@ -57,4 +62,16 @@
 
 #tablas-tarifa table {
     width: 100%;
+}
+
+#tablas-tarifa table {
+    overflow: hidden;
+    border-radius: 1rem ;
+    border: 1px solid var(--color-background);
+}
+
+
+#tabla-tarifa{
+    overflow: hidden;
+    border-radius: 2rem;
 }
