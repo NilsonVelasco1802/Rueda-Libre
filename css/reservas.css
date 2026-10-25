@@ -1,3 +1,10 @@
+#main-reservas {
+    background-color: var(--color-primary);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
 #button-reservas{
     margin: 1rem;
 }
@@ -6,30 +13,55 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
     width: 100%;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 8rem;
     font-family: "Rubik", sans-serif;
 }
 
+#reserva-formulario h1 {
+
+    color: var(--color-text-light);
+}
+
 
 #formulario {
-    max-width: 700px;
+    background-color: var(--color-text-light);
+    max-width: 43.75rem;
     width: 100%;
-    border: 3px solid var(--color-primary);
+    border: 0.1875rem solid var(--color-primary);
     border-radius: 0.67rem;
-    padding: 20px;
+    padding: 1.25rem;
 }
 #formulario select{
     width: 100%;
 }
 
-input {
-    width: 100%;
+#contenedor-politicas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
-#politicas {
-    display: inline-flex;
+
+#reserva-formulario select{
+    cursor: pointer;
+} 
+
+
+#politicas-checkbox {
     width: auto;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#politicas-checkbox:hover {
+    transform: scale(1.2);
+}
+
+.footer-principal {
+    margin-top: 0;
 }

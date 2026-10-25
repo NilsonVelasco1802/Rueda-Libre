@@ -4,7 +4,7 @@
 }
 
 #button-tarifas{
-    border: 10px solid var(--color-background);
+    border: 0.625rem solid var(--color-background);
     border-radius: 1rem;
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
     width: 100%;
     margin: 0 auto;
     margin-top: 7rem;
@@ -20,7 +20,7 @@
 
 #tablas-tarifa section {
     width: 90%;
-    max-width: 1100px;
+    max-width: 68.75rem;
 }
 
 #tablas-tarifa h1,
@@ -67,9 +67,21 @@
 #tablas-tarifa table {
     overflow: hidden;
     border-radius: .67rem ;
-    border: 1px solid var(--color-background);
+    border: 0.0625rem solid var(--color-background);
 }
 
+#tablas-tarifa th:hover{
+
+    cursor: pointer;
+    background-color: var(--color-secondary ) !important;
+}
+
+
+#tablas-tarifa td:hover{
+
+    cursor: pointer;
+    background-color: var(--color-secondary ) !important;
+}
 
 #tabla-tarifa{
     overflow: hidden;

@@ -1,17 +1,78 @@
-#logo2-encuentranos{
-    height: 25gitrem;
+
+#main-encuentranos {
+    margin-top: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
 }
 
-#logo2-encuentranos img{
-    width: 19rem;
-    height: 20rem;
+/* Sección de redes sociales */
+#redes-encuentranos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#redes-encuentranos h1 {
+    margin-bottom: 1rem;
+}
+
+#correo-encuentranos {
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+    color: var(--color-link);
+}
+
+/* Redes en una fila centrada */
+#redes-encuentranos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #redes-encuentranos ul li a {
     display: flex;
-    color: var(--color-link);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    transition: color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#redes-encuentranos ul li a:hover {
+    transform: scale(1.15);
+}
+
+/* Todos los iconos del mismo tamaño */
+#redes-encuentranos ul li a img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    display: block;
+}S
+
+/* Logo inferior centrado */
+#logo2-encuentranos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo2-encuentranos img {
+    display: block;
+    width: 16.5rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
