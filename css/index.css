@@ -94,3 +94,37 @@
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+
+#section-alquiler {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+
+#tarjeta-alquiler {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 2%;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+#tarjeta-alquiler h3 {
+    margin: 0;
+}
+
+#img-alquiler {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: contain;
+}
