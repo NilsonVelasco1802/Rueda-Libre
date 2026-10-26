@@ -1,3 +1,11 @@
+body {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+
+}
 
 #main-encuentranos {
     margin-top: 4rem;
@@ -8,6 +16,7 @@
     align-items: center;
     padding: 2rem 1rem;
     gap: 2rem;
+    flex: 1;
 }
 
 /* Sección de redes sociales */
@@ -75,4 +84,12 @@
     max-width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+#footer-principal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: bottom;
 }
