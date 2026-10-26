@@ -84,7 +84,7 @@
                             name="telefono"
                             maxlength="10"
                             required
-                            pattern="[0-9],{6,10}"
+                            pattern="[0-9]{10}"
                             oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                             title="Esccribe almenos 10 numeros">
                     </p>
@@ -152,9 +152,10 @@
                         <br>
                         <select id="plan" name="plan" required>
                             <option value="" disabled selected>Seleccione un recorrido</option>
-                            <option value="hora">Medellín</option>
-                            <option value="dia">Norte</option>
-                            <option value="semana">Sur</option>
+                            <option value="lugar">Ninguno</option>
+                            <option value="lugar">Medellín</option>
+                            <option value="lugar">Norte</option>
+                            <option value="lugar">Sur</option>
                         </select>
                     </p>
                     <p>
