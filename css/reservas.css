@@ -1,135 +1,71 @@
-/* Contenedor principal */
 #main-reservas {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
     background-color: var(--color-primary);
     width: 100%;
     box-sizing: border-box;
-    padding: 2rem 1rem;
+    padding: 2rem;
 }
 
-/* Sección del formulario */
+#button-reservas{
+    margin: 1rem;
+}
+
 #reserva-formulario {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1.875rem;
     width: 100%;
-    min-width: 0;
-    max-width: 43.75rem;
-    margin: 6rem auto;
-    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     font-family: "Rubik", sans-serif;
 }
 
-/* Título */
 #reserva-formulario h1 {
+
     color: var(--color-text-light);
-    text-align: center;
-    margin: 0;
 }
 
-/* Formulario */
+
 #formulario {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.25rem;
     background-color: var(--color-text-light);
+    max-width: 43.75rem;
     width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
     border: 0.1875rem solid var(--color-primary);
     border-radius: 0.67rem;
     padding: 1.25rem;
 }
-
-/* Grupos de campos */
-#formulario fieldset {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.75rem;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 1rem;
-}
-
-/* Títulos de los grupos */
-#formulario legend {
-    font-weight: bold;
-    font-family: "Rubik", sans-serif;
-}
-
-/* Etiquetas y campos */
-#formulario p {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.4rem;
-    margin: 0;
-    min-width: 0;
-}
-
-/* Campos de entrada */
-#formulario input:not([type="checkbox"]),
-#formulario select,
-#formulario textarea {
-    display: block;
+#formulario select{
     width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 0.65rem;
-    font: inherit;
-    border: 1px solid #999;
-    border-radius: 0.35rem;
 }
 
-/* Área de comentarios */
-#formulario textarea {
-    min-height: 7rem;
-    resize: vertical;
-}
-
-/* Contenedor de políticas */
 #contenedor-politicas {
-    display: grid !important;
-    grid-template-columns: auto 1fr !important;
+    display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 0.5rem !important;
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
 
-/* Checkbox */
+#reserva-formulario select{
+    cursor: pointer;
+} 
+
+
 #politicas-checkbox {
-    grid-column: 1;
-    grid-row: 1;
     width: auto;
     margin: 0;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
-/* Etiqueta de las políticas */
-#contenedor-politicas label {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-/* Efecto del checkbox */
 #politicas-checkbox:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-/* Botón de envío */
-#button-reservas {
-    justify-self: center;
-    max-width: 100%;
-    margin: 0.5rem;
-    padding: 0.75rem 1.25rem;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-/* Footer */
 .footer-principal {
     margin-top: 0;
+}
+
+input{
+    width: 100%;
 }
