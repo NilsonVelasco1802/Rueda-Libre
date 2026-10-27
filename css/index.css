@@ -4,26 +4,6 @@
     overflow: hidden;
 }
 
-#main-principal {
-    margin-right: 15rem;
-    margin-left: 15rem;
-    margin-top: 6rem;
-    margin-bottom: 5rem;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-#main-principal h2,h3{
-    margin: 1rem;
-    font-family: "Rubik", sans-serif;
-}
-
-#main-principal p,li{
-    font-family: "Rubik", sans-serif;
-    font-size: 1.2rem;
-    flex: 1;
-}
-
 #img-banner-principal {
     width: 100%;
     height: auto;
@@ -35,17 +15,40 @@
     background-color: var(--color-primary);
 }
 
+#main-principal {
+    width: 100%;
+    max-width: 100%;
+    margin: 2rem auto 5rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+#main-principal h2,
+#main-principal h3 {
+    margin: 1rem 0;
+    font-family: "Rubik", sans-serif;
+}
+
+
+#main-principal p,
+#main-principal li {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    overflow-wrap: break-word;
+}
+
+
 /* Contenedor de las tarjetas */
 #contenedor-servicios {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
     gap: 1.5rem;
     align-items: stretch;
 }
 
 /* Tarjetas individuales */
 .tarjeta-servicio {
-    flex: 1 1 15rem;
     min-width: 0;
     box-sizing: border-box;
     padding: 1rem;
@@ -56,10 +59,11 @@
     gap: 0.5rem;
     position: relative;
 }
-#tarjeta-servicio:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
 
+/* Efecto al pasar el cursor */
+.tarjeta-servicio:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
 }
 
 /* Títulos y párrafos dentro de las tarjetas */
@@ -71,7 +75,7 @@
     margin: 0;
 }
 
-/* Imagen debajo del texto */
+/* Imágenes */
 .imagen-servicio {
     display: block;
     width: 100%;
@@ -80,51 +84,144 @@
     object-fit: contain;
 }
 
-
+/* Etiqueta Nuevo */
 .etiqueta-nuevo {
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
-
     padding: 0.3rem 0.7rem;
     background-color: var(--color-primary);
     color: white;
-
     border-radius: 0.5rem;
     font-size: 0.8rem;
     font-weight: bold;
 }
 
 
+/* Sección de alquiler */
 #section-alquiler {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
     box-sizing: border-box;
-    padding: 0 5%;
+    padding: 0 1rem;
 }
 
+/* Tarjeta de alquiler */
 #tarjeta-alquiler {
-    width: 60%;
+    width: 100%;
+    max-width: 45rem;
+    min-width: 0;
     box-sizing: border-box;
-    padding: 2%;
+    padding: 1.5rem;
     border: 1px solid var(--color-primary);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    position: relative;
+    gap: 0.75rem;
 }
 
+/* Título */
 #tarjeta-alquiler h3 {
     margin: 0;
+    overflow-wrap: break-word;
 }
 
+/* Imagen */
 #img-alquiler {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
     object-fit: contain;
+    box-sizing: border-box;
+}
+
+/* Lista de pasos */
+#tarjeta-alquiler ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+}
+
+/* Elementos de la lista */
+#tarjeta-alquiler li {
+    margin-bottom: 0.75rem;
+    overflow-wrap: break-word;
+}
+
+/* Sección Nuestra flota */
+#seccion-flota {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+}
+
+#seccion-flota h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Cuadrícula adaptable */
+#contenedor-flota {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+/* Tarjetas de bicicletas */
+.tarjeta-bicicleta {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Imágenes */
+.tarjeta-bicicleta img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Nombre del modelo */
+.tarjeta-bicicleta h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+/* Descripción */
+.tarjeta-bicicleta p {
+    line-height: 1.5;
+}
+
+/* Precio */
+.tarjeta-bicicleta .precio-bicicleta {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Botón Reservar */
+.tarjeta-bicicleta .boton-reservar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+}
+
+.tarjeta-bicicleta .boton-reservar:hover {
+    background-color: var(--color-secondary);
 }
