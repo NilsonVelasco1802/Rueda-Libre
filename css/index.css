@@ -1,3 +1,53 @@
+#section-banner {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    justify-content: space-between;
+}
+
+#logo-banner {
+    height: 100vh;
+    overflow: hidden;
+}
+#logo-banner img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#text-banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-primary);
+}
+
+#text-banner h1{
+    color: var(--color-text-light);
+    text-shadow:  4px 3px 0 var(--color-secondary);
+    line-height: 1.5;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    text-align: center;
+    margin: 0 1rem;
+    
+}
+
+#text-banner p {
+    color: var(--color-text-light);
+    line-height: 2.0;
+    font-size: 2rem;
+    font-weight: 500;
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    
+    text-align: center;
+    margin: 0 1rem;
+  
+}
 #banner-principal {
     width: 100%;
     margin-top: 5rem;
@@ -45,11 +95,13 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
     gap: 1.5rem;
     align-items: stretch;
+    align-items: center;
 }
 
 /* Tarjetas individuales */
 .tarjeta-servicio {
     min-width: 0;
+    width: 90%;
     box-sizing: border-box;
     padding: 1rem;
     border: 1px solid var(--color-primary);
