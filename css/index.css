@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    justify-content: space-between;
+
 }
 
 #logo-banner {
@@ -13,11 +13,11 @@
 }
 #logo-banner img {
     object-fit: cover;
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 #text-banner {
+    height: 100vh;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -48,10 +48,44 @@
     margin: 0 1rem;
   
 }
-#banner-principal {
-    width: 100%;
-    margin-top: 5rem;
-    overflow: hidden;
+
+/* Versión móvil */
+@media (max-width: 48rem) {
+    #section-banner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #logo-banner {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #logo-banner img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #text-banner {
+        width: 100%;
+        height: auto;
+        min-height: 15rem;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+    }
+
+    #text-banner h1 {
+        font-size: clamp(2.5rem, 9vw, 4rem);
+        line-height: 1.2;
+        overflow-wrap: break-word;
+    }
+
+    #text-banner p {
+        font-size: clamp(1.2rem, 5vw, 1.75rem);
+        line-height: 1.5;
+    }
 }
 
 #img-banner-principal {
@@ -90,18 +124,20 @@
 
 
 /* Contenedor de las tarjetas */
+/* Contenedor de las tarjetas */
 #contenedor-servicios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
     gap: 1.5rem;
     align-items: stretch;
-    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Tarjetas individuales */
 .tarjeta-servicio {
     min-width: 0;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
     padding: 1rem;
     border: 1px solid var(--color-primary);
