@@ -252,13 +252,6 @@
     margin-bottom: 2rem;
 }
 
-/* Cuadrícula adaptable */
-#contenedor-flota {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-    gap: 1.5rem;
-    align-items: stretch;
-}
 
 /* Tarjetas de bicicletas */
 .tarjeta-bicicleta {
