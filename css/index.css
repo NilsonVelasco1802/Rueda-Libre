@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--color-primary);
+    color: var(--color-background-secondary);
 }
 
 #text-banner h1{
@@ -50,7 +51,7 @@
 }
 
 /* Versión móvil */
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
     #section-banner {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -140,8 +141,8 @@
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 1rem;
+    
+    
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -203,13 +204,17 @@
     min-width: 0;
     box-sizing: border-box;
     padding: 1.5rem;
-    border: 1px solid var(--color-primary);
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    transition:1s;
 }
 
+#tarjeta-alquiler:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
 /* Título */
 #tarjeta-alquiler h3 {
     margin: 0;
@@ -305,4 +310,20 @@
 
 .tarjeta-bicicleta .boton-reservar:hover {
     background-color: var(--color-secondary);
+}
+
+#tarjeta-flota:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) and (max-width: 1280px){
+    #logo-banner {
+    display: none;
+    }
+
+    #text-banner{
+        grid-column: span 2;
+    }
 }

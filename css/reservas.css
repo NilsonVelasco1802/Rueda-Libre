@@ -143,6 +143,10 @@
     color: var(--color-text-light);
     margin-bottom: 2rem;
 }
+#img-rutas{
+    width: 100%;
+    height: auto;
+}
 
 /* Tres tarjetas en una fila */
 #galeria-rutas {
@@ -259,4 +263,13 @@
     .tarjeta-ruta h3 {
         font-size: 1.4rem;
     }
+}
+
+@media (min-width: 1024px) and (max-width: 1342px){
+    #main-reservas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding: 1.5rem;
+    }
+
 }
