@@ -20,29 +20,53 @@
 </head>
 
 <body>
-    <header class="header-principal">
+   
         
-        <nav class="nav-principal">
-            <a href="./index.html" class="logo">
-                <img src="./img/logo1.png" alt="Logo de Rueda Libre">
-            </a>
-            <menu id="menu-header">
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li> 
-                    <a href="./pages/tarifas.html">
-                        Tarifas
-                    </a>
-                </li>
-                <li>
-                    <a href="./pages/reservas.html">
-                        Reserva
-                    </a>
-                </li>
-            </menu>
-        </nav>
-    </header>
+<header class="header-principal"> 
+    <nav class="nav-principal navbar navbar-expand-lg">
+
+    <!-- Logo -->
+    <a href="./index.html" class="logo navbar-brand">
+        <img src="./img/logo1.png" alt="Logo de Rueda Libre">
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler bg-white" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNavbar"
+        aria-controls="menuNavbar"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación">
+
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse" id="menuNavbar">
+
+        <ul class="navbar-nav ms-auto" id="menu-header">
+
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/tarifas.html">Tarifas</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/reservas.html">Reserva</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+</header>
+    
     <section id="section-banner">
         <div id="logo-banner">
             <img src="./img/logo1.png" alt="Logo de Rueda Libre">
@@ -100,7 +124,7 @@
             <h3>Explora nuestras rutas en bicicleta</h3>
 
             <p>
-                Descubre nuevos lugares y disfruta de recorridos únicos por Medellín. <strong>Conoce nuestras rutas diseñadas para diferentes niveles de experiencia</strong>. Vive una aventura <em>sobre dos ruedas, disfrutando de la naturaleza y la ciudad</em>.
+                 Descubre nuevos lugares y disfruta de recorridos únicos por Medellín. <strong>Conoce nuestras rutas diseñadas para diferentes niveles de experiencia</strong>. Vive una aventura <em>sobre dos ruedas, disfrutando de la naturaleza y la ciudad</em>.
             </p>
 
             <img src="./img/ruta.png"
@@ -344,6 +368,7 @@
         <a href="./pages/correo.html">Nuestro Correo y Horarios</a>
         </nav>
     </footer>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

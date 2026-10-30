@@ -50,7 +50,6 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
 }
 
@@ -71,7 +70,7 @@ p {
 /* Navegación */
 nav {
     background-color: var(--color-primary);
-    color: var(--color-text-light);
+    color: var(--color-text-light ) !important;
 }
 
 /* Enlaces */
@@ -126,78 +125,64 @@ textarea:focus-visible {
 /* HEADER */
 
 
-/* Header principal */
-.header-principal {
-    position: fixed;
+/* Encabezado principal */ 
+.header-principal { position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--color-primary);
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: var(--color-primary); 
 }
 
-/* Navegación principal */
-.nav-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.125rem 0.9375rem;
-    gap: 0.625rem;
-}
+
+/* Navegación */
+ .nav-principal { 
+    padding: 0.125rem 0.9375rem; 
+    gap: 0.625rem; }
 
 /* Logo */
-.logo img {
-    display: block;
-    width: 4.375rem;
-    height: auto;
-}
+ .logo img { 
+    display: block; 
+    width: 4.375rem; 
+    height: auto; }
 
 /* Menú */
-#menu-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ #menu-header { 
     gap: 0.5rem;
-    list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
-/* Enlaces */
-#menu-header a {
-    display: block;
-    color: var(--color-text-light);
+/* Enlaces */ 
+#menu-header a { display: block;
+    color: var(--color-a-menu);
     text-decoration: none;
-    font-size: 0.8125rem;
-    padding: 0.3125rem;
-    transition: color 0.3s ease;
+    font-size: 0.8125rem; padding: 0.5rem;
     font-family: "Rubik", sans-serif;
-    transition: transform 0.2s ease;
+    font-weight: 600;
+    transition: transform 0.2s ease, color 0.3s ease; 
 }
 
 /* Efecto hover */
-#menu-header a:hover {
-    color: var(--color-text-light);
-    transform: scale(1.2);
+ #menu-header a:hover { 
+    color: var(--color-accent); 
+    transform: scale(1.1); 
+}
+
+/* Menú desplegable en móviles */ 
+@media (max-width: 991.98px) {
+
+#menu-header {
+    align-items: flex-start;
+    padding-top: 0.5rem;
+}
+
+#menu-header a {
+    padding: 0.625rem;
 }
 
 
-
-
-/* ////////////Menu Header //////////// */
-
-#menu-header li a{
-    color: var(--color-a-menu);
-    font-weight: 600;
 }
-
-/* ////////////Menu Header //////////// */
-
-#nav-footer a{
-    color: var(--color-a-menu);
-    font-weight: 600;
-}
-
 
 /*////////////// Footer /////////////////*/
 
