@@ -37,6 +37,23 @@
     --border-radius: 8px;
 }
 
+/* Botones de Bootstrap */
+.btn-primary {
+    --bs-btn-bg: var(--color-secondary);
+    --bs-btn-border-color: var(--color-secondary);
+
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+
+    --bs-btn-active-bg: var(--color-primary-hover);
+    --bs-btn-active-border-color: var(--color-primary-hover);
+
+    --bs-btn-color: var(--color-button-text);
+    --bs-btn-hover-color: var(--color-button-text);
+
+    transition: all 0.3s ease;
+}
+
 /*////////  Estilos generales ////////*/
 html, body {
     margin: 0;
