@@ -67,13 +67,6 @@
     min-width: 0;
 }
 
-#formulario input,
-#formulario select,
-#formulario textarea {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
 
 #formulario select,
 #reserva-formulario select {
