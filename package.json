@@ -1,0 +1,24 @@
+{
+  "name": "rueda-libre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilsonVelasco1802/Rueda-Libre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NilsonVelasco1802/Rueda-Libre/issues"
+  },
+  "homepage": "https://github.com/NilsonVelasco1802/Rueda-Libre#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  }
+}

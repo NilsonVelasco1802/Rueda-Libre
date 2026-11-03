@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+root { /* Colores principales */ --color-primary: #1B4332; --color-secondary: #2D6A4F; --color-accent: #52B788;
+
+/* Colores de fondo */
+--color-background: #FFFFFF;
+--color-background-secondary: #F1F5F3;
+
+/* Colores de texto */
+--color-text: #212529;
+--color-text-secondary: #495057;
+--color-text-light: #FFFFFF;
+--color-a-menu: #FFFFFF;
+
+/* Bordes */
+--color-border: #ADB5BD;
+
+/* Estados de interacción */
+--color-primary-hover: #143326;
+--color-focus: #2D6A4F;
+
+/* Botones */
+--color-button-background: #1B4332;
+--color-button-text: #FFFFFF;
+--color-button-hover: #143326;
+
+/* Enlaces */
+--color-link: #1B4332;
+--color-link-hover: #2D6A4F;
+
+/* Sombras */
+--shadow-card: 0 4px 12px rgba(27, 67, 50, 0.12);
+
+/* Bordes redondeados */
+--border-radius: 8px;
+
+}
+
+@theme { --color-primary: #1B4332; --color-secondary: #2D6A4F; --color-accent: #52B788; --color-background: #FFFFFF; --color-background-secondary: #F1F5F3; --color-text: #212529; --color-text-secondary: #495057; --color-border: #ADB5BD; }
