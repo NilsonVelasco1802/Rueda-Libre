@@ -217,7 +217,7 @@
 /* Imagen */
 #img-alquiler {
     display: block;
-    width: 100%;
+    width: 50vh;
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
